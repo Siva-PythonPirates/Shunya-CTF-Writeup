@@ -30,7 +30,7 @@ for i in range(0,1):
         print(long_to_bytes(new),end="\n")
 ```
 
-### Echoes of Encryption
+### 2. Echoes of Encryption
 #### Approach
 1) Required : A seed value <br>
 2) The description hinted about the Nvidia SMC vulnerability (2022). 2CVE's resulted in the google search of the vulnerability and the seed value was one of the CVE numbers '202242269' <br>
@@ -58,19 +58,19 @@ for i in range(1,100000000000):
 ```
 
 
-### AESthetic
+### 3. AESthetic
 #### Approach
 1) 2 .wav files were give. Uploading them in https://morsecode.world/international/decoder/audio-decoder-adaptive.html to extract us the message from the hidden beeps, we would be getting the IV and key. The key is 'YOUGOTHTEKEYNJOY'. The IV extracted is 0X000102030405060708090A0B0C0D0E0F and the cipher text is 69d5deb91a001151db5d98231574a51779acd1a84b9338a6750697c0af7e4591.We could simply use online decoders to decode it futhter.
 
 #### Screenshot - AESthetic
 ![image](https://github.com/Siva-PythonPirates/Shunya-CTF-Writeup/blob/main/ss1.png)
 
-### Uncover the Tea
+### 4. Uncover the Tea
 #### Approach
 1) By googling "rap stars whose fight started from tweets and now has a massive bump on forehead", fetched some articles. <br>
 2) https://heatworld.com/celebrity/news/cardi-b-nicki-minaj-fight-nyfw-party/ this article was about Cardi B's and Nicki Minaj's fight at the NYFW. Hence the flag turned out to be 0CTF{NYFW_2018_Cardi_Minaj}.
 
-### The Vanishing of Doctor Kumar
+### 5.The Vanishing of Doctor Kumar
 #### Approach
 1) An mp4 file was given. <br>
 2) Loading it in Sonic visualizer and adding the spectogram from the pane menu would show us the flag.
@@ -78,9 +78,16 @@ for i in range(1,100000000000):
 #### Screenshot - Dr.Kumar
 ![image](https://github.com/Siva-PythonPirates/Shunya-CTF-Writeup/blob/main/ss2.png)
 
-### BIBBA Part 3
+### 6.BIBBA Part 3
 
 1) 23.23, 89.04 were the coords required which were found by simple googling, but this was the final flag.
+
+### 7. Check Recheck and Check
+
+1) Just edited the corrupted headers using hexeditor and got the flag
+
+#### Screenshot - Check Recheck and Check
+![image](https://github.com/Siva-PythonPirates/Shunya-CTF-Writeup/blob/main/ss3.jpeg)
 
 ## HARD CHALLENGE
 
