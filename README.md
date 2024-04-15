@@ -4,7 +4,7 @@
 
 ### 1. Rivest Salted Adleman
 #### Approach :
-1) This is a classic RSA problem. There'll be p,q and e given. But here, p was given and q was XOR-ed with some value which resulted in salted_q.Generally p*q = n ,but in this case it was p*salted_q which was salted_n and then e value was the standard value (65537). <br>
+1) This is a RSA problem. There'll be p,q and e given. But here, p was given and q was XOR-ed with some value which resulted in salted_q.Generally p*q = n ,but in this case it was p*salted_q which was salted_n and then e value was the standard value (65537). <br>
 2) Now we need to find 'q'. The description hinted that 'q' was XOR-ed with and number anywhere between 1-9 or it was XOR-ed with 123456789. Therefore I tried both the combination and found out it was 123456789. XOR-ing salted_q with that would give the actual 'q'. Now we have all the values required to calculate the 'n', 'phi' and 'd'. 
 #### CODE
 ```
